@@ -7,6 +7,7 @@ public class exercise_2 {
     public static void main(String[] args){
 
         biblioteca biblioteca=new biblioteca("Facultad de Tecnologia",220d);
+        BD_Connection conn = new BD_Connection();
 
         Scanner sc = new Scanner(System.in);
         Armario armario = null;
@@ -18,7 +19,7 @@ public class exercise_2 {
         String nl, cd, at, ed, tarmario;
 
 
-        while (opcion != 5) {
+        while (true) {
             System.out.println("*********************");
             System.out.println("1. Crear Armario");
             System.out.println("2. Ver armarios de la biblioteca");
@@ -79,7 +80,8 @@ public class exercise_2 {
                     System.out.println("Libro agregado correctamente al armario de código " + armario.getCodigo() + "!");
                     break;
                 case 5:
-
+                    conn.Guardar(biblioteca);
+                    break;
                 case 6:
                     System.out.println("Que tenga buen dia!");
                     break;
