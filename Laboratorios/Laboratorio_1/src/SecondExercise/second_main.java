@@ -3,6 +3,10 @@ package SecondExercise;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+//6. Escribe un
+//sistema en Java para gestionar una biblioteca virtual. Implementa clases para representar
+//libros, autores y usuarios. Proporciona funcionalidades para agregar libros, buscar libros
+//por autor, prestar libros a usuarios y devolver libros.
 public class second_main {
     public static void main(String[] args){
 

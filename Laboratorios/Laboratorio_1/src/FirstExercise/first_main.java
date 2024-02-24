@@ -2,6 +2,10 @@ package FirstExercise;
 
 import java.util.Scanner;
 
+//4. Crea un sistema en Java para gestionar una tienda de productos electrónicos. Define
+//clases para representar productos como teléfonos móviles, laptops, etc. Implementa
+//funcionalidades para agregar productos al inventario, mostrar el inventario y calcular el
+//precio total de los productos en stock.
 public class first_main {
     public static void main(String[] args){
 

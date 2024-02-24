@@ -1,9 +1,11 @@
 package FourthExercise;
 
-import FirstExercise.producelec;
-
 import java.util.Scanner;
 
+//10. Crea un sistema en Java para administrar un inventario de productos en una tienda.
+//Define clases para representar productos con atributos como nombre, precio y
+//cantidad en stock. Implementa funcionalidades para agregar productos al inventario,
+//vender productos, calcular el valor total del inventario y mostrar el inventario
 public class fourth_main {
     public static void main(String[] args){
 

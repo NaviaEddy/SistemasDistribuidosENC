@@ -2,6 +2,10 @@ package ThirdExercise;
 
 import java.util.Scanner;
 
+//8. Desarrolla un sistema en Java para gestionar una lista de tareas pendientes. Define
+//clases para representar tareas con atributos como descripción, fecha límite y estado
+//(pendiente, en progreso, completada). Implementa funcionalidades para agregar
+//tareas, marcar tareas como completadas y mostrar la lista de tareas
 public class third_main {
     public static void main(String[] args){
 
