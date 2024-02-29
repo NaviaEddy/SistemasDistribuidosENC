@@ -41,14 +41,14 @@ public class ServerTCP {
                     String[] suma = recibido.split("\\+");
                     result = Integer.parseInt(suma[0]) + Integer.parseInt(suma[1]);
                 } else if (recibido.contains("-")) {
-                    String[] suma = recibido.split("-");
-                    result = Integer.parseInt(suma[0]) - Integer.parseInt(suma[1]);
+                    String[] resta = recibido.split("-");
+                    result = Integer.parseInt(resta[0]) - Integer.parseInt(resta[1]);
                 } else if (recibido.contains("*")) {
-                    String[] suma = recibido.split("\\*");
-                    result = Integer.parseInt(suma[0]) * Integer.parseInt(suma[1]);
+                    String[] mult = recibido.split("\\*");
+                    result = Integer.parseInt(mult[0]) * Integer.parseInt(mult[1]);
                 }else{
-                    String[] suma = recibido.split("/");
-                    result = Integer.parseInt(suma[0]) / Integer.parseInt(suma[1]);
+                    String[] div = recibido.split("/");
+                    result = Integer.parseInt(div[0]) / Integer.parseInt(div[1]);
                 }
                 //System.out.println(suma[0]);
                 toClient = new PrintStream(client.getOutputStream());
