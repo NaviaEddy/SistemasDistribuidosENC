@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package soquettcp_2;
+package FirstExercise_T2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -17,7 +17,7 @@ import java.net.Socket;
  *
  * @author Carlos
  */
-public class ServerTCP {
+public class ServerTCP_EJ1 {
 
     /**
      * @param args the command line arguments

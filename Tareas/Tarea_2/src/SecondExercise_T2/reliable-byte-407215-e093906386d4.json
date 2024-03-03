@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "reliable-byte-407215",
+  "private_key_id": "e093906386d46741f7219428fc381f95761589b0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDgVTcig9cGXeQX\nfUupyh+tcAtjMkoECXQbGD3m7idNurApb6+CsoNtxj2UCmqKPYxEduu7mv2Mjisr\nSCNCyKKOG/mcOurc3c2hw1OZ7dyBjvhF2SUa3UqSjEn9XdmQiiKgTwu6yfOpjQBW\nt+AfnbPkyEYC9GA4Ao6gjAqOO8z2wKs0yzhQgmyjfmsgYcCnjTEom+u3B8q4pDB4\nFlwNwR5ptZ6kYF4Sfv7YragTkmMC0y+o67EiF20p5eX/Eqb9Xljm381WOLHrrjoS\nzel9accozoMrFOrK+OOeKnpVQhW6RLgjOrbskXEl40+022SwwcvUnJEsHgefWI0O\nf5EzUtLhAgMBAAECggEAGODacHV2jzoyZXh7v6Suxqk6WhHlq3Tw72BM3SNkMHaX\nusCsEi6B7NajVZuiHRqeR6l4kyGpJMFPgElLv8hIXsIzeGQAT+Y5O8tRpix+289j\nMTvXpZcNAhuUyQhzbFglZundPyXOY+tDMlrJ/DedD642NXWshgmij6N4ODXhkSuv\npr+fD8q2j8Tj146Z3pjlEVdeKU9SIktvI8gPEr7FlXrMRSMUyLcQ+t6DU4UZg3O8\nWv8DzAYSs3DtpmsC6D2eZLSRL+3hYDS3P8lr6UXjn3Ie5RE993P+TYwVoTPFe34O\n2M2/1WjWbd1QTXzJXChuqeeiVe2UD5uXNS/T2DELAQKBgQD0rFdeHMhjuGWY9VZb\nwL1/ZzYYfpUsv1RjcOFSIdFPRm3afM1fMqtrlNgfJNnEoQP14ONCLpRYV3TfK4lq\n1BLA8z5hhKGK23j3nd6hSscchlUKItdLgxHI0Nu6ocLY+1AEGwOIZSOwfGdYhALC\n5WZa9DsS8YVSFelyT6qjkmHIGQKBgQDqt9FXMY0B7V7bl5X7MNKqNZ4zAL5LouPT\n0Y5DcpBp+ANfR0wzSwzbwYb7H7yG+YF12IoYnlj/6rAbj3ZPES8ue6CmaYEgplMl\n1oyHFNgIa+NXPy8A5O2GG2sY1xfeg/BA0qffYKjux4DSCaPWmG6kyH09gS+swoHi\ngJd2kxpaCQKBgQDBnK72FiisYHpk858GtBo/+thfwash4bVRiz2B1Kjg5oZ/YkrR\njjL/yqTK4EpCwndz1iV/dYSF847UGot/MZo1fUZbvKxoSQwMRayqTZYKCHK6tp9P\nbcRg+IUnxmF9ekDzPr0o7X+0ZH0TGkNlHkpEpwcoEl7Bef1lK42IKomd4QKBgQCs\ndT06PK0nglpVLG7FrpzK9TR0sxIfDuMo6msGAbI8Oj94DTHe6kDbYrmj4DCsV70Y\ncm8dIZOxDaYxydoaxDyPgcSLITAAZlTnk1mTkuwcW/EhVMpbdNlU1OZ+zOO72eN4\nLY+s4B+fujRbnzujXELHjov+2eHGpO+8FdG0DOeqyQKBgQCpCB3cb1xvWWgmtZek\nXcyFaF03Fd1TfHhSruqbS1Sc8MFQcw6B4KQ1MFGEY0Dx2dNgk1IIv8TOR/j/wn+v\nn8kBdFOUETp+C5tw5Y7sRlq3Sad1IlGdevYvaQh/4gHgiyoWFvZ6MQXqkImRJ1LR\nqZlbKRUiMpMMYmF9cDLg5uItSw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "eddy-navia-condori@reliable-byte-407215.iam.gserviceaccount.com",
+  "client_id": "111176543177831466221",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/eddy-navia-condori%40reliable-byte-407215.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
