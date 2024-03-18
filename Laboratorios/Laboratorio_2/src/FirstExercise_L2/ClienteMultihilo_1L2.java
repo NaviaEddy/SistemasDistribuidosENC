@@ -39,7 +39,7 @@ public class ClienteMultihilo_1L2 {
                 public void run() {
                     while (true) {
                         try {
-                            // Recibir y mostrar mensajes del servidor
+                            // Recibir y mostrar mensajes del RMI.servidor
                             String mensaje = dis.readUTF();
                             System.out.println(mensaje);
                         } catch (IOException e) {

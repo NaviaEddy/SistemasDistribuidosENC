@@ -30,11 +30,11 @@ public class ClienteMultihilo_2L2 {
             DataInputStream dis = new DataInputStream(s.getInputStream());
             DataOutputStream dos = new DataOutputStream(s.getOutputStream());
 
-            // Crear un nuevo hilo para recibir los mensajes del servidor
+            // Crear un nuevo hilo para recibir los mensajes del RMI.servidor
             Thread recibirMensajes = new Thread(() -> {
                 try {
                     while (true) {
-                        // Recibir mensajes del servidor y mostrarlos en consola
+                        // Recibir mensajes del RMI.servidor y mostrarlos en consola
                         String mensajeRecibido = dis.readUTF();
                         System.out.println(mensajeRecibido);
                         if (mensajeRecibido.equals("FIN_JUEGO")) {
@@ -54,10 +54,10 @@ public class ClienteMultihilo_2L2 {
             });
             recibirMensajes.start();
 
-            // Manejar el envío de mensajes desde el cliente
+            // Manejar el envío de mensajes desde el RMI.cliente
             try {
                 while (true) {
-                    // Leer el mensaje desde la consola y enviarlo al servidor
+                    // Leer el mensaje desde la consola y enviarlo al RMI.servidor
                     String mensaje = scn.nextLine();
                     dos.writeUTF(mensaje);
 

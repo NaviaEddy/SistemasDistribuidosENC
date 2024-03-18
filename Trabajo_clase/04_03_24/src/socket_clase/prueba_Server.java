@@ -32,10 +32,10 @@ public class prueba_Server {
             while (true) {
                 Socket client;
                 PrintStream toClient;
-                client = server.accept(); //conexion entre cliente y servidor para comunicacion bidireccional, de aqui pasa cuando hay conexion al cliente
-                System.out.println("1 cliente conectado");
+                client = server.accept(); //conexion entre RMI.cliente y RMI.servidor para comunicacion bidireccional, de aqui pasa cuando hay conexion al RMI.cliente
+                System.out.println("1 RMI.cliente conectado");
                 BufferedReader fromClient = new BufferedReader(new InputStreamReader(client.getInputStream())); // el lector
-                toClient = new PrintStream(client.getOutputStream()); //crear instancia para enviar a cliente.
+                toClient = new PrintStream(client.getOutputStream()); //crear instancia para enviar a RMI.cliente.
                 
             String solicitud;
             while ((solicitud = fromClient.readLine()) != null && !solicitud.equals("salir")) {
@@ -46,12 +46,12 @@ public class prueba_Server {
                     String Respuesta = CompararResultadoCliente(ResultadoCliente.toLowerCase());
                     toClient.println(Respuesta);
                 } else {
-                    // Tratar la situación en la que la respuesta del cliente es nula
-                    System.out.println("La respuesta del cliente es nula.");
+                    // Tratar la situación en la que la respuesta del RMI.cliente es nula
+                    System.out.println("La respuesta del RMI.cliente es nula.");
                 }
             }
 
-                System.out.println("El cliente se ha desconectado");
+                System.out.println("El RMI.cliente se ha desconectado");
             }
         } catch (IOException ex) {
             System.out.println(ex.getMessage());

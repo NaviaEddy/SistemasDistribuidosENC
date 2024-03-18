@@ -32,11 +32,11 @@ public class ServerTCP_EJ3 {
         ServerSocket server;
         try {
             server = new ServerSocket(port);
-            System.out.println("Se inicio el servidor con éxito");
+            System.out.println("Se inicio el RMI.servidor con éxito");
             while(true){
                 Socket client;
                 PrintStream toClient;
-                client = server.accept(); //conexion entre cliente y servidor para comunicacion bidireccional
+                client = server.accept(); //conexion entre RMI.cliente y RMI.servidor para comunicacion bidireccional
                 BufferedReader fromClient = new BufferedReader(new InputStreamReader(client.getInputStream())); // el lector
                 System.out.println("Cliente se conecto");
                 String urlStr = fromClient.readLine();

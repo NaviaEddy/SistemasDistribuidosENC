@@ -40,16 +40,16 @@ public class ServerMultihilo_1L2
 			
 			try
 			{
-				// Coneccion del cliente
+				// Coneccion del RMI.cliente
 				s = ss.accept();
 				
-				System.out.println("un nuevo cliente se ha conectado : " + s);
+				System.out.println("un nuevo RMI.cliente se ha conectado : " + s);
 				
 				// obtener su entrada y salida de stream
 				DataInputStream dis = new DataInputStream(s.getInputStream());
 				DataOutputStream dos = new DataOutputStream(s.getOutputStream());
 				
-				System.out.println("Nuevo hilo asignado para el cliente");
+				System.out.println("Nuevo hilo asignado para el RMI.cliente");
 
 				ClientHandler_1L2 nuevoCliente = new ClientHandler_1L2(s, dis, dos);
 				clientes.add(nuevoCliente);

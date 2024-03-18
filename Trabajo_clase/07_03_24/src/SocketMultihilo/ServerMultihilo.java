@@ -33,16 +33,16 @@ public class ServerMultihilo
 			
 			try
 			{
-				// Coneccion del cliente
+				// Coneccion del RMI.cliente
 				s = ss.accept();
 				
-				System.out.println("un nuevo cliente se ha conectado : " + s);
+				System.out.println("un nuevo RMI.cliente se ha conectado : " + s);
 				
 				// obtener su entrada y salida de stream
 				DataInputStream dis = new DataInputStream(s.getInputStream());
 				DataOutputStream dos = new DataOutputStream(s.getOutputStream());
 				
-				System.out.println("Aginar unnuevo hilopara este cliente ");
+				System.out.println("Aginar unnuevo hilopara este RMI.cliente ");
 
 				// create a new thread object
 				Thread t = new ClientHandler(s, dis, dos);

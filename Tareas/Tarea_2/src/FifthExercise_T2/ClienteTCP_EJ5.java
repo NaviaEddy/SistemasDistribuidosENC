@@ -31,7 +31,7 @@ public class ClienteTCP_EJ5 {
                 String fileName = sc.nextLine();
                 toServer.println(fileName);
                 String response = fromServer.readLine();
-                System.out.println("Respuesta del servidor: " + response);
+                System.out.println("Respuesta del RMI.servidor: " + response);
 
             } catch (IOException ex) {
                 System.out.println(ex.getMessage());

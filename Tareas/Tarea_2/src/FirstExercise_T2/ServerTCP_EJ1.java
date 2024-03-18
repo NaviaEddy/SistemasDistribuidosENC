@@ -29,11 +29,11 @@ public class ServerTCP_EJ1 {
         ServerSocket server;
         try {
             server = new ServerSocket(port);
-            System.out.println("Se inicio el servidor con éxito");
+            System.out.println("Se inicio el RMI.servidor con éxito");
             while(true){
                 Socket client;
                 PrintStream toClient;
-                client = server.accept(); //conexion entre cliente y servidor para comunicacion bidireccional
+                client = server.accept(); //conexion entre RMI.cliente y RMI.servidor para comunicacion bidireccional
                 BufferedReader fromClient = new BufferedReader(new InputStreamReader(client.getInputStream())); // el lector
                 System.out.println("Cliente se conecto");
                 String recibido=fromClient.readLine();
@@ -63,6 +63,6 @@ public class ServerTCP_EJ1 {
 
 
 //Realizar un programa que utilizando la tecnologia socket tcp, pueda simular el funcionamiento de una calculadora
-//para dos numeros, el cliente mandara una cadena con la operacion y el servidor respondera la solucion. Ej: cliente
-//manda la cadena 3+4 y el servidor manda la cadena 7, cliente manda la cadena 5-3, servidor manda la cadena 2.
+//para dos numeros, el RMI.cliente mandara una cadena con la operacion y el RMI.servidor respondera la solucion. Ej: RMI.cliente
+//manda la cadena 3+4 y el RMI.servidor manda la cadena 7, RMI.cliente manda la cadena 5-3, RMI.servidor manda la cadena 2.
 //Solo dos digitos y solo las operaciones +,-,*,/

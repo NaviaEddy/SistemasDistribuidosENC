@@ -28,8 +28,8 @@ public class prueba_Client {
             do {
                 System.out.println("ESCRIBA LA ORDEN: iniciar:suma, respuesta:valor, salir");
                 orden = sc.nextLine().toLowerCase(); // ingresar valor por teclado
-                toServer.println(orden); // enviar la cadena llamada 'orden' al servidor
-                String resultado = fromServer.readLine(); // obtiene desde el servidor el valor de resultado
+                toServer.println(orden); // enviar la cadena llamada 'orden' al RMI.servidor
+                String resultado = fromServer.readLine(); // obtiene desde el RMI.servidor el valor de resultado
                 System.out.println(resultado);
             } while (!orden.equals("salir"));
 

@@ -60,11 +60,11 @@ public class ClientHandler_3L2 extends Thread {
     }
 
     private void sendTaskList() throws IOException {
-        // Obtener la lista de tareas del servidor
+        // Obtener la lista de tareas del RMI.servidor
         ArrayList<task> tasks = ServerMultihilo_3L2.getTasks();
-        // Enviar el número de tareas al cliente
+        // Enviar el número de tareas al RMI.cliente
         dos.writeInt(tasks.size());
-        // Enviar cada tarea al cliente
+        // Enviar cada tarea al RMI.cliente
         for (task task : tasks) {
             dos.writeInt(task.getId());
             dos.writeUTF(task.getDescription());

@@ -36,7 +36,7 @@ public class ServerMultihilo_3L2
 		while (true) {
 			Socket s = null;
 			try {
-				// Acepta la conexión del cliente
+				// Acepta la conexión del RMI.cliente
 				s = ss.accept();
 				System.out.println("Un nuevo jugador se ha conectado: " + s);
 
@@ -44,11 +44,11 @@ public class ServerMultihilo_3L2
 				DataInputStream dis = new DataInputStream(s.getInputStream());
 				DataOutputStream dos = new DataOutputStream(s.getOutputStream());
 
-				// Asignar un nuevo hilo para el cliente
+				// Asignar un nuevo hilo para el RMI.cliente
 				ClientHandler_3L2 nuevoCliente = new ClientHandler_3L2(s, dis, dos);
 				clientes.add(nuevoCliente);
 
-				// Crear un nuevo hilo para el cliente
+				// Crear un nuevo hilo para el RMI.cliente
 				Thread t = new Thread(nuevoCliente);
 				t.start();
 
