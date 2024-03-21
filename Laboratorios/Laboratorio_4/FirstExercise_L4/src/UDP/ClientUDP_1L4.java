@@ -22,39 +22,31 @@ public class ClientUDP_1L4 {
   // Los argumentos proporcionan el mensaje y el nombre del servidor
   public static void main(String args[]) {
     int puerto = 6789;
-    Scanner sc=new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
     try {
-        System.out.print("Introduzca un valor");
-        String dato=sc.next();
-        String ip="localhost";
+      System.out.print("Introduzca un valor: ");
+      String dato = sc.next();
+      String ip = "localhost";
       DatagramSocket socketUDP = new DatagramSocket();
       byte[] mensaje = dato.getBytes();
       InetAddress hostServidor = InetAddress.getByName(ip);
-      
-      // Construimos un datagrama para enviar el mensaje al servidor
-      DatagramPacket peticion =
-        new DatagramPacket(mensaje, dato.length(), hostServidor,
-                           puerto);
 
-      // Enviamos el datagrama
+      DatagramPacket peticion = new DatagramPacket(mensaje, mensaje.length, hostServidor, puerto);
       socketUDP.send(peticion);
 
-      // Construimos el DatagramPacket que contendrá la respuesta
       byte[] bufer = new byte[1000];
-      DatagramPacket respuesta =
-        new DatagramPacket(bufer, bufer.length);
+      DatagramPacket respuesta = new DatagramPacket(bufer, bufer.length);
       socketUDP.receive(respuesta);
 
-      // Enviamos la respuesta del servidor a la salida estandar
-      System.out.println("Respuesta: " + new String(respuesta.getData()));
-
-      // Cerramos el socket
+      System.out.println("Respuesta: " + new String(respuesta.getData(), 0, respuesta.getLength()));
       socketUDP.close();
 
     } catch (SocketException e) {
       System.out.println("Socket: " + e.getMessage());
     } catch (IOException e) {
       System.out.println("IO: " + e.getMessage());
+    } finally {
+      sc.close();
     }
   }
 }

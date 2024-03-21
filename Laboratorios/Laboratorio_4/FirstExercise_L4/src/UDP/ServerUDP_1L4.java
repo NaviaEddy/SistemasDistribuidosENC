@@ -16,45 +16,28 @@ import java.net.SocketException;
  */
 public class ServerUDP_1L4 {
 
-  public static void main (String args[]) { 
-    int port=6789;  
+  public static void main(String args[]) {
+    int port = 6789;
     try {
-      
       DatagramSocket socketUDP = new DatagramSocket(port);
       byte[] bufer = new byte[1000];
 
       while (true) {
-        // Construimos el DatagramPacket para recibir peticiones
-        DatagramPacket peticion =
-          new DatagramPacket(bufer, bufer.length);
-
-        // Leemos una petición del DatagramSocket
+        DatagramPacket peticion = new DatagramPacket(bufer, bufer.length);
         socketUDP.receive(peticion);
 
-        System.out.print("Datagrama recibido del host: " +
-                           peticion.getAddress());
-        System.out.println(" desde enl puerto remoto: " +
-                           peticion.getPort());
-        
-        
-        String cadena =new String (peticion.getData());
-        int valor=Integer.valueOf(cadena.trim());
-        System.out.println(" valor enviado: " +valor
-                         );
-        // Construimos el DatagramPacket para enviar la respuesta
-        int resp=valor*2;
-        String response=String.valueOf(resp);
-              byte[] mensaje = response.getBytes();
-              
+        System.out.print("Datagrama recibido del host: " + peticion.getAddress());
+        System.out.println(" desde el puerto remoto: " + peticion.getPort());
 
-        DatagramPacket respuesta =
-          new DatagramPacket(mensaje, response.length(),
-                             peticion.getAddress(), peticion.getPort());
+        String cadena = new String(peticion.getData(), 0, peticion.getLength());
+        int valor = Integer.parseInt(cadena.trim());
 
-        // Enviamos la respuesta, que es un eco
+        String response = esPrimo(valor) ? "Es primo" : "No es primo";
+        byte[] mensaje = response.getBytes();
+
+        DatagramPacket respuesta = new DatagramPacket(mensaje, mensaje.length, peticion.getAddress(), peticion.getPort());
         socketUDP.send(respuesta);
       }
-
     } catch (SocketException e) {
       System.out.println("Socket: " + e.getMessage());
     } catch (IOException e) {
@@ -62,6 +45,17 @@ public class ServerUDP_1L4 {
     }
   }
 
+  private static boolean esPrimo(int numero) {
+    if (numero <= 1) {
+      return false;
+    }
+    for (int i = 2; i <= Math.sqrt(numero); i++) {
+      if (numero % i == 0) {
+        return false;
+      }
+    }
+    return true;
+  }
 }
 
     
