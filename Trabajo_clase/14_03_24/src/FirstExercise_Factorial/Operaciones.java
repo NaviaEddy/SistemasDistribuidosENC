@@ -5,7 +5,9 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
 public class Operaciones extends UnicastRemoteObject implements IOperaciones {
+
     protected Operaciones() throws RemoteException {
+
         super();
     }
 

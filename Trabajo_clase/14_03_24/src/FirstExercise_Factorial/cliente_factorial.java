@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class cliente_factorial {
     public static void main(String[] args) throws MalformedURLException, NotBoundException, RemoteException {
         Scanner sc = new Scanner(System.in);
-
+        
         try {
             IOperaciones operaciones = (IOperaciones)Naming.lookup("rmi://localhost/RMI.Operaciones");
 
