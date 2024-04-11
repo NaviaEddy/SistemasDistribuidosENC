@@ -45,7 +45,3 @@ public class ServerTCP {
 }
 
 
-//Realizar un programa que utilizando la tecnologia socket tcp, pueda simular el funcionamiento de una calculadora
-//para dos numeros, el RMI.cliente mandara una cadena con la operacion y el RMI.servidor respondera la solucion. Ej: RMI.cliente
-//manda la cadena 3+4 y el RMI.servidor manda la cadena 7, RMI.cliente manda la cadena 5-3, RMI.servidor manda la cadena 2.
-//Solo dos digitos y solo las operaciones +,-,*,/

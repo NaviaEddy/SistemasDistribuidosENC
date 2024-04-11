@@ -15,9 +15,11 @@
       <sourceFolder url="file://$MODULE_DIR$/Trabajo_clase/07_03_24/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Laboratorios/Laboratorio_2/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Trabajo_clase/14_03_24/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Laboratorios/Laboratorio_4/FirstExercise_L4/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Laboratorios/Laboratorio_4/SecondExercise_L4/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Tareas/Tarea_3/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Laboratorios/Laboratorio_3/FirstExercise_L4/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Laboratorios/Laboratorio_3/SecondExercise_L4/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Trabajo_clase/EjerciciosPrimerParcial/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tareas/Tarea_4/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

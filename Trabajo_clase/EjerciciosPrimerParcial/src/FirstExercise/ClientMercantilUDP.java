@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package UDP;
+package FirstExercise;
 
 /**
  *
@@ -17,37 +17,44 @@ import java.net.InetAddress;
 import java.net.SocketException;
 import java.util.Scanner;
 
-public class ClientUDP_1L4 {
+public class ClientMercantilUDP {
 
   // Los argumentos proporcionan el mensaje y el nombre del servidor
   public static void main(String args[]) {
     int puerto = 6789;
-    Scanner sc = new Scanner(System.in);
+    Scanner sc=new Scanner(System.in);
     try {
-      System.out.print("Introduzca un valor: ");
-      String dato = sc.next();
-      String ip = "localhost";
+        System.out.print("Introduzca un valor");
+        String dato=sc.next();
+        String ip="localhost";
       DatagramSocket socketUDP = new DatagramSocket();
       byte[] mensaje = dato.getBytes();
       InetAddress hostServidor = InetAddress.getByName(ip);
+      
+      // Construimos un datagrama para enviar el mensaje al servidor
+      DatagramPacket peticion =
+        new DatagramPacket(mensaje, dato.length(), hostServidor,
+                           puerto);
 
-      DatagramPacket peticion = new DatagramPacket(mensaje, mensaje.length, hostServidor, puerto);
+      // Enviamos el datagrama
       socketUDP.send(peticion);
-      //System.out.println(dato);
 
+      // Construimos el DatagramPacket que contendrá la respuesta
       byte[] bufer = new byte[1000];
-      DatagramPacket respuesta = new DatagramPacket(bufer, bufer.length);
+      DatagramPacket respuesta =
+        new DatagramPacket(bufer, bufer.length);
       socketUDP.receive(respuesta);
 
-      System.out.println("Respuesta: " + new String(respuesta.getData(), 0, respuesta.getLength()));
+      // Enviamos la respuesta del servidor a la salida estandar
+      System.out.println("Respuesta: " + new String(respuesta.getData()));
+
+      // Cerramos el socket
       socketUDP.close();
 
     } catch (SocketException e) {
       System.out.println("Socket: " + e.getMessage());
     } catch (IOException e) {
       System.out.println("IO: " + e.getMessage());
-    } finally {
-      sc.close();
     }
   }
 }

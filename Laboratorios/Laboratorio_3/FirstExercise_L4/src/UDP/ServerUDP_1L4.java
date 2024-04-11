@@ -30,6 +30,7 @@ public class ServerUDP_1L4 {
         System.out.println(" desde el puerto remoto: " + peticion.getPort());
 
         String cadena = new String(peticion.getData(), 0, peticion.getLength());
+        //System.out.println(cadena);
         int valor = Integer.parseInt(cadena.trim());
 
         String response = esPrimo(valor) ? "Es primo" : "No es primo";
