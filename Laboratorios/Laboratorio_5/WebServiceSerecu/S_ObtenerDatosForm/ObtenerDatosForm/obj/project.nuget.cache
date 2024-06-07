@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MLJUyyCcWfZxZ5oylAQE0SdMdhSLcz0QNT849gkUkCGzZz+dTiTcSSPSt0e/FpWbpCz3cjBiRRWGplMXljz5ow==",
+  "dgSpecHash": "FSFvtap/a+jBrxiokLRKNvM4tvl1FPSF2PGYsvC/CpWdPT1LdBAvZvvxWIrQCTK1jy94rAv1d9c3ntpA93Y6Yw==",
   "success": true,
-  "projectFilePath": "D:\\USFX\\6to Semestre - CICO\\SIS258\\SOAP\\Laboratorio_5\\S_ObtenerDatosForm\\ObtenerDatosForm\\ObtenerDatosForm.csproj",
+  "projectFilePath": "D:\\USFX\\6to Semestre - CICO\\SIS258\\SistemasDistribuidosENC\\Laboratorios\\Laboratorio_5\\WebServiceSerecu\\S_ObtenerDatosForm\\ObtenerDatosForm\\ObtenerDatosForm.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Eddy Navía Condori\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Eddy Navía Condori\\.nuget\\packages\\microsoft.extensions.objectpool\\6.0.16\\microsoft.extensions.objectpool.6.0.16.nupkg.sha512",

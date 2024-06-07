@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ObtenerDatosForm
-build_property.ProjectDir = D:\USFX\6to Semestre - CICO\SIS258\SOAP\Laboratorio_5\S_ObtenerDatosForm\ObtenerDatosForm\
+build_property.ProjectDir = D:\USFX\6to Semestre - CICO\SIS258\SistemasDistribuidosENC\Laboratorios\Laboratorio_5\WebServiceSerecu\S_ObtenerDatosForm\ObtenerDatosForm\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

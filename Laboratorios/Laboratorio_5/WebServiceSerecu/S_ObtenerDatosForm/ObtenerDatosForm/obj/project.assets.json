@@ -3056,11 +3056,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\USFX\\6to Semestre - CICO\\SIS258\\SOAP\\Laboratorio_5\\S_ObtenerDatosForm\\ObtenerDatosForm\\ObtenerDatosForm.csproj",
+      "projectUniqueName": "D:\\USFX\\6to Semestre - CICO\\SIS258\\SistemasDistribuidosENC\\Laboratorios\\Laboratorio_5\\WebServiceSerecu\\S_ObtenerDatosForm\\ObtenerDatosForm\\ObtenerDatosForm.csproj",
       "projectName": "ObtenerDatosForm",
-      "projectPath": "D:\\USFX\\6to Semestre - CICO\\SIS258\\SOAP\\Laboratorio_5\\S_ObtenerDatosForm\\ObtenerDatosForm\\ObtenerDatosForm.csproj",
+      "projectPath": "D:\\USFX\\6to Semestre - CICO\\SIS258\\SistemasDistribuidosENC\\Laboratorios\\Laboratorio_5\\WebServiceSerecu\\S_ObtenerDatosForm\\ObtenerDatosForm\\ObtenerDatosForm.csproj",
       "packagesPath": "C:\\Users\\Eddy Navía Condori\\.nuget\\packages\\",
-      "outputPath": "D:\\USFX\\6to Semestre - CICO\\SIS258\\SOAP\\Laboratorio_5\\S_ObtenerDatosForm\\ObtenerDatosForm\\obj\\",
+      "outputPath": "D:\\USFX\\6to Semestre - CICO\\SIS258\\SistemasDistribuidosENC\\Laboratorios\\Laboratorio_5\\WebServiceSerecu\\S_ObtenerDatosForm\\ObtenerDatosForm\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

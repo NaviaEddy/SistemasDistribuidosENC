@@ -1,0 +1,21 @@
+{
+  "name": "seduca-graphql",
+  "version": "1.0.0",
+  "description": "npm install express graphql express-graphql mysql2 sequelize",
+  "main": "database.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.8.1",
+    "mysql2": "^3.10.0",
+    "sequelize": "^6.37.3"
+  }
+}
