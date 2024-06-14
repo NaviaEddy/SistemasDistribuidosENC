@@ -353,29 +353,13 @@ namespace ServiceReference1
                 result.AllowCookies = true;
                 return result;
             }
-            if ((endpointConfiguration == EndpointConfiguration.WebServiceSoap12))
-            {
-                System.ServiceModel.Channels.CustomBinding result = new System.ServiceModel.Channels.CustomBinding();
-                System.ServiceModel.Channels.TextMessageEncodingBindingElement textBindingElement = new System.ServiceModel.Channels.TextMessageEncodingBindingElement();
-                textBindingElement.MessageVersion = System.ServiceModel.Channels.MessageVersion.CreateVersion(System.ServiceModel.EnvelopeVersion.Soap12, System.ServiceModel.Channels.AddressingVersion.None);
-                result.Elements.Add(textBindingElement);
-                System.ServiceModel.Channels.HttpTransportBindingElement httpBindingElement = new System.ServiceModel.Channels.HttpTransportBindingElement();
-                httpBindingElement.AllowCookies = true;
-                httpBindingElement.MaxBufferSize = int.MaxValue;
-                httpBindingElement.MaxReceivedMessageSize = int.MaxValue;
-                result.Elements.Add(httpBindingElement);
-                return result;
-            }
+            
             throw new System.InvalidOperationException(string.Format("No se pudo encontrar un punto de conexión con el nombre \"{0}\".", endpointConfiguration));
         }
         
         private static System.ServiceModel.EndpointAddress GetEndpointAddress(EndpointConfiguration endpointConfiguration)
         {
             if ((endpointConfiguration == EndpointConfiguration.WebServiceSoap))
-            {
-                return new System.ServiceModel.EndpointAddress("http://localhost:54592/WebService.asmx");
-            }
-            if ((endpointConfiguration == EndpointConfiguration.WebServiceSoap12))
             {
                 return new System.ServiceModel.EndpointAddress("http://localhost:54592/WebService.asmx");
             }
@@ -386,8 +370,7 @@ namespace ServiceReference1
         {
             
             WebServiceSoap,
-            
-            WebServiceSoap12,
+           
         }
     }
 }

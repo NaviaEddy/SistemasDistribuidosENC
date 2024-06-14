@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OficinaTramites")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41fa2a23f80f8b0814657d0b41440cce4861a68e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+231cb0ed5215f81bf4575ce68198a3478dc4b906")]
 [assembly: System.Reflection.AssemblyProductAttribute("OficinaTramites")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OficinaTramites")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

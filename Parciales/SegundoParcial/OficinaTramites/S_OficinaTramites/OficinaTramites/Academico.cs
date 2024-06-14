@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace OficinaTramites
 {
+    [Serializable]
     internal class Academico
     {
         public string? ci { get; set; }

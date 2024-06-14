@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace OficinaTramites
 {
-    internal class Seduca
+    [Serializable]
+    internal class Qualification
     {
         public string? ci { get; set; }
         public string? apellidos { get; set; }
@@ -15,7 +16,19 @@ namespace OficinaTramites
 
         public override string ToString()
         {
-            return $"ci: {ci}, Apellidos: {apellidos}, Nombres: {nombres}, Bachiller:{Bachiller}";
+            return $"ci: {ci}, Apellidos: {apellidos}, Nombres: {nombres}, Bachiller: {Bachiller}";
         }
+    }
+
+    [Serializable]
+    internal class Data
+    {
+        public Qualification qualification { get; set; }
+    }
+
+    [Serializable]
+    internal class SeducaResponse
+    {
+        public Data data { get; set; }
     }
 }

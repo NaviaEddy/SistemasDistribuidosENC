@@ -3,19 +3,19 @@
   "WorkspaceRootPath": "D:\\USFX\\6to Semestre - CICO\\SIS258\\SistemasDistribuidosENC\\Parciales\\SegundoParcial\\OficinaTramites\\S_OficinaTramites\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2CA3B314-65A8-4507-AE7D-295207C11317}|OficinaTramites\\OficinaTramites.csproj|D:\\USFX\\6to Semestre - CICO\\SIS258\\SistemasDistribuidosENC\\Parciales\\SegundoParcial\\OficinaTramites\\S_OficinaTramites\\oficinatramites\\seduca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CA3B314-65A8-4507-AE7D-295207C11317}|OficinaTramites\\OficinaTramites.csproj|solutionrelative:oficinatramites\\seduca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2CA3B314-65A8-4507-AE7D-295207C11317}|OficinaTramites\\OficinaTramites.csproj|d:\\usfx\\6to semestre - cico\\sis258\\sistemasdistribuidosenc\\parciales\\segundoparcial\\oficinatramites\\s_oficinatramites\\oficinatramites\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2CA3B314-65A8-4507-AE7D-295207C11317}|OficinaTramites\\OficinaTramites.csproj|solutionrelative:oficinatramites\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2CA3B314-65A8-4507-AE7D-295207C11317}|OficinaTramites\\OficinaTramites.csproj|d:\\usfx\\6to semestre - cico\\sis258\\sistemasdistribuidosenc\\parciales\\segundoparcial\\oficinatramites\\s_oficinatramites\\oficinatramites\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2CA3B314-65A8-4507-AE7D-295207C11317}|OficinaTramites\\OficinaTramites.csproj|D:\\USFX\\6to Semestre - CICO\\SIS258\\SistemasDistribuidosENC\\Parciales\\SegundoParcial\\OficinaTramites\\S_OficinaTramites\\oficinatramites\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2CA3B314-65A8-4507-AE7D-295207C11317}|OficinaTramites\\OficinaTramites.csproj|solutionrelative:oficinatramites\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2CA3B314-65A8-4507-AE7D-295207C11317}|OficinaTramites\\OficinaTramites.csproj|d:\\usfx\\6to semestre - cico\\sis258\\sistemasdistribuidosenc\\parciales\\segundoparcial\\oficinatramites\\s_oficinatramites\\oficinatramites\\seduca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CA3B314-65A8-4507-AE7D-295207C11317}|OficinaTramites\\OficinaTramites.csproj|solutionrelative:oficinatramites\\seduca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CA3B314-65A8-4507-AE7D-295207C11317}|OficinaTramites\\OficinaTramites.csproj|d:\\usfx\\6to semestre - cico\\sis258\\sistemasdistribuidosenc\\parciales\\segundoparcial\\oficinatramites\\s_oficinatramites\\oficinatramites\\academico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2CA3B314-65A8-4507-AE7D-295207C11317}|OficinaTramites\\OficinaTramites.csproj|D:\\USFX\\6to Semestre - CICO\\SIS258\\SistemasDistribuidosENC\\Parciales\\SegundoParcial\\OficinaTramites\\S_OficinaTramites\\oficinatramites\\academico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2CA3B314-65A8-4507-AE7D-295207C11317}|OficinaTramites\\OficinaTramites.csproj|solutionrelative:oficinatramites\\academico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -36,40 +36,40 @@
               "RelativeDocumentMoniker": "OficinaTramites\\Academico.cs",
               "ToolTip": "D:\\USFX\\6to Semestre - CICO\\SIS258\\SistemasDistribuidosENC\\Parciales\\SegundoParcial\\OficinaTramites\\S_OficinaTramites\\OficinaTramites\\Academico.cs",
               "RelativeToolTip": "OficinaTramites\\Academico.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAArAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-06T21:20:31.261Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Seduca.cs",
               "DocumentMoniker": "D:\\USFX\\6to Semestre - CICO\\SIS258\\SistemasDistribuidosENC\\Parciales\\SegundoParcial\\OficinaTramites\\S_OficinaTramites\\OficinaTramites\\Seduca.cs",
               "RelativeDocumentMoniker": "OficinaTramites\\Seduca.cs",
               "ToolTip": "D:\\USFX\\6to Semestre - CICO\\SIS258\\SistemasDistribuidosENC\\Parciales\\SegundoParcial\\OficinaTramites\\S_OficinaTramites\\OficinaTramites\\Seduca.cs",
               "RelativeToolTip": "OficinaTramites\\Seduca.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAJAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABYAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-06T21:14:49.801Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\USFX\\6to Semestre - CICO\\SIS258\\SistemasDistribuidosENC\\Parciales\\SegundoParcial\\OficinaTramites\\S_OficinaTramites\\OficinaTramites\\Form1.cs",
               "RelativeDocumentMoniker": "OficinaTramites\\Form1.cs",
               "ToolTip": "D:\\USFX\\6to Semestre - CICO\\SIS258\\SistemasDistribuidosENC\\Parciales\\SegundoParcial\\OficinaTramites\\S_OficinaTramites\\OficinaTramites\\Form1.cs",
               "RelativeToolTip": "OficinaTramites\\Form1.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAmwFYAAAAMAAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAAAiwDQAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-06T20:33:02.205Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\USFX\\6to Semestre - CICO\\SIS258\\SistemasDistribuidosENC\\Parciales\\SegundoParcial\\OficinaTramites\\S_OficinaTramites\\OficinaTramites\\Form1.cs",
               "RelativeDocumentMoniker": "OficinaTramites\\Form1.cs",

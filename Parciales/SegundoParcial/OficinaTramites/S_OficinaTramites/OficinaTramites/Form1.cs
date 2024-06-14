@@ -1,9 +1,10 @@
-using Microsoft.IdentityModel.Protocols.WsTrust;
 using Newtonsoft.Json;
 using System.Diagnostics;
-using System.Net.Http.Json;
 using System.Text;
-using System.Text.Json.Serialization;
+using System.Text.Json;
+
+
+
 namespace OficinaTramites
 {
     public partial class Form1 : Form
@@ -50,22 +51,26 @@ namespace OficinaTramites
             String query = @"
             {
                 qualification(ci: ""76607457"") {
-                    id
-                    ci
-                    apellidos
                     nombres
                     Bachiller
                 }
             }";
+            var jsonPayload = new
+            {
+                query = query
+            };
+
+            var jsonString = JsonConvert.SerializeObject(jsonPayload);
             var request = new HttpRequestMessage(HttpMethod.Post, "http://localhost:4000/graphql");
-            request.Content = new StringContent(query, Encoding.UTF8, "application/json");
+            request.Content = new StringContent(jsonString, Encoding.UTF8, "application/json");
             var response = await httpClient.SendAsync(request);
             System.Diagnostics.Debug.WriteLine(response);
             if (response.IsSuccessStatusCode)
             {
                 var json = await response.Content.ReadAsStringAsync();
-                var seduca = JsonConvert.DeserializeObject<Seduca>(json);
-                labelSeduca.Text = seduca.ToString();
+                System.Diagnostics.Debug.WriteLine("Seduca: ", json);
+                var seduca = JsonConvert.DeserializeObject<SeducaResponse>(json);
+                labelSeduca.Text = seduca.data.qualification.ToString();
             }
             else
             {
@@ -80,11 +85,10 @@ namespace OficinaTramites
 
         public async void llamadoAcademico()
         {
-            string url = "http://127.0.0.1:8000/api/v1/participante/81936561"; // Reemplaza con tu URL de servicio REST
+            string url = "http://127.0.0.1:8000/api/v1/academic/81936561"; // Reemplaza con tu URL de servicio REST
             String resultado = await GetDataFromApiAsync(url);
-
-            labelAcademico.Text = resultado;
-            Academico academico = JsonConvert.DeserializeObject<Academico>(labelAcademico.Text);
+            System.Diagnostics.Debug.WriteLine("Academico: ", resultado);
+            Academico academico = JsonConvert.DeserializeObject<Academico>(resultado);
             labelAcademico.Text = academico.ToString();
         }
 
@@ -95,7 +99,10 @@ namespace OficinaTramites
                 try
                 {
                     HttpResponseMessage response = await client.GetAsync(url);
-                    response.EnsureSuccessStatusCode();
+                    if(!response.IsSuccessStatusCode)
+                    {
+                        return $"Error: {response.StatusCode}";
+                    }
                     string responseBody = await response.Content.ReadAsStringAsync();
                     return responseBody;
                 }

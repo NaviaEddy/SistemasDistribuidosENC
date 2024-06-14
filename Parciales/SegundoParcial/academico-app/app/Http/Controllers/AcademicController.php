@@ -52,20 +52,22 @@ class AcademicController extends Controller
             ], 404);
         }
 
-        // Diferenciar entre PUT y PATCH
-        if ($request->isMethod('patch')) {
-            $input = $request->only([
-                'ci',
-                'nombre_completo',
-                'titulo',
-                'fecha_emision',
-            ]);
-        } else {
-            $input = $request->all();
-        }
+        $academic->update(request()->all());
 
-        $academic->fill($input);
-        $academic->save();
+        // Diferenciar entre PUT y PATCH
+        // if ($request->isMethod('patch')) {
+        //     $input = $request->only([
+        //         'ci',
+        //         'nombre_completo',
+        //         'titulo',
+        //         'fecha_emision',
+        //     ]);
+        // } else {
+        //     $input = $request->all();
+        // }
+
+        //$academic->fill($input);
+        //$academic->save();
 
         return response()->json([
             'message' => 'Registro actualizado correctamente',
