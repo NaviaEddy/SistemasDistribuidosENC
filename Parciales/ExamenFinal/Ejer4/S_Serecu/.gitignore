@@ -1,0 +1,104 @@
+# Visual Studio specific files
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# Enable "build/" folder in the NuGet Packages folder since NuGet uses it for MSBuild targets
+!packages/build/
+
+# Uncomment if using a build server
+# *.pubxml
+# *.publishproj
+
+# NuGet
+*.nupkg
+# NuGet Symbol Packages
+*.snupkg
+# The packages folder can be ignored because of the presence of restore packages information
+**/[Pp]ackages/*
+# except build/, which is used as an MSBuild target.
+!**/[Pp]ackages/build/
+# Uncomment if necessary however generally it will be regenerated when needed
+# **/[Pp]ackages/repositories.config
+
+# Npm Packages
+node_modules/
+# Yarn Packages
+.yarn/
+.yarnrc.yml
+.pnp.*
+
+# Web-specific files
+lib/
+logs/
+*.log
+*.tlog
+*.wrn
+*.csv
+*.xml
+npm-debug.log
+yarn-error.log
+.sass-cache/
+.htaccess
+# Django stuff:
+*.pot
+*.pyc
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.history
+.vscode
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Configuration files
+appsettings.json
+appsettings.*.json
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# Rider
+.idea/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Temporary files
+.temp
+tmp/
+
+# JetBrains Rider
+.idea/
+*.sln.iml

@@ -32,3 +32,12 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+/EjerciciosExamenFinal/ConsumirWS/nbproject/private/
+/EjerciciosExamenFinal/ConsumirWS/build/
+/EjerciciosExamenFinal/ConsumirWS/dist/
+/EjerciciosExamenFinal/ReservaHotel/nbproject/private/
+/EjerciciosExamenFinal/ReservaHotel/build/
+/EjerciciosExamenFinal/ReservaHotel/dist/
+/Parciales/ExamenFinal/Ejer3_RMI/nbproject/private/
+/Parciales/ExamenFinal/Ejer3_RMI/build/
+/Parciales/ExamenFinal/Ejer4_MULTIHILO/nbproject/private/
